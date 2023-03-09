@@ -4,7 +4,9 @@ using UnityEngine;
 
 namespace Behaviours
 {
-    public class PlayerStandartAttackBehaviour : AttackBehaviour<ICanAttack>
-    {
-    }
+    //public class PlayerStandartAttackBehaviour : AttackBehaviour<ICanAttack>
+    //{
+        
+
+    //}
 }
