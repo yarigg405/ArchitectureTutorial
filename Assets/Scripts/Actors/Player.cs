@@ -14,9 +14,9 @@ namespace Actors
             else
                 Debug.LogError("Is no move component on " + gameObject.name);
 
-            //if (TryGetComponent<ICanAttack>(out var attacker))
-            //    AddBehaviour(new PlayerStandartAttackBehaviour(attacker));
-           // else Debug.LogError("Is no attack component on " + gameObject.name);
+            if (TryGetComponent<ICanAttack>(out var attacker))
+                AddBehaviour(new PlayerStandartAttackBehaviour(attacker));
+            else Debug.LogError("Is no attack component on " + gameObject.name);
         }
     }
     public interface IPlayer : IActor { }
