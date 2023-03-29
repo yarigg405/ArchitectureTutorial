@@ -1,10 +1,10 @@
 ﻿namespace Commands
 {
-    public struct CleanCommand
+    public struct CleanCommand : ICleanCommand
     {
     }
 
     public interface ICleanCommand : ICommand
-    { 
+    {
     }
 }
