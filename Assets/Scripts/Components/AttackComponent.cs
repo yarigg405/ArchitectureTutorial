@@ -24,7 +24,7 @@ namespace Components
 
         public Transform Transform => transform;
 
-        public DmgOwner Owner => dmgOwner;
+        public DmgOwner DmgOwner { get => dmgOwner; set => dmgOwner = value; }
 
         private void Awake()
         {
